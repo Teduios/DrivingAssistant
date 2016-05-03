@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="200"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周五" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaE-fm-FDe">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="多云" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k38-ev-GsT">
+                        <rect key="frame" x="0.0" y="100" width="100" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="ktx-4u-cd3">
+                        <rect key="frame" x="30.5" y="160" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="cci-1x-K7k"/>
+                            <constraint firstAttribute="width" constant="40" id="jWa-iR-la3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5˚/10˚" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpZ-ye-9uE">
+                        <rect key="frame" x="0.0" y="50" width="100" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EpZ-ye-9uE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="21C-CX-Qt9"/>
+                <constraint firstItem="EpZ-ye-9uE" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.25" id="2R0-cI-Z7i"/>
+                <constraint firstItem="k38-ev-GsT" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.25" id="C0O-AF-bll"/>
+                <constraint firstAttribute="trailing" secondItem="k38-ev-GsT" secondAttribute="trailing" id="I1L-5v-DyJ"/>
+                <constraint firstAttribute="trailing" secondItem="UaE-fm-FDe" secondAttribute="trailing" id="QNU-tK-t3R"/>
+                <constraint firstAttribute="trailing" secondItem="EpZ-ye-9uE" secondAttribute="trailing" id="RVG-mh-lHF"/>
+                <constraint firstItem="k38-ev-GsT" firstAttribute="top" secondItem="EpZ-ye-9uE" secondAttribute="bottom" id="RyR-X4-ysI"/>
+                <constraint firstAttribute="bottom" secondItem="ktx-4u-cd3" secondAttribute="bottom" id="XZ0-lH-JfF"/>
+                <constraint firstItem="ktx-4u-cd3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ehK-mg-dzZ"/>
+                <constraint firstItem="EpZ-ye-9uE" firstAttribute="top" secondItem="UaE-fm-FDe" secondAttribute="bottom" id="g4y-g2-rLR"/>
+                <constraint firstItem="UaE-fm-FDe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hSP-bb-9gt"/>
+                <constraint firstItem="UaE-fm-FDe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lAI-NE-BBB"/>
+                <constraint firstItem="UaE-fm-FDe" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.25" id="n2f-Lu-8Ui"/>
+                <constraint firstItem="k38-ev-GsT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rpX-Cf-8ux"/>
+            </constraints>
+            <connections>
+                <outlet property="lowHightTempLabel" destination="EpZ-ye-9uE" id="n4b-9g-HhA"/>
+                <outlet property="weatherDescLabel" destination="k38-ev-GsT" id="VeH-J2-jbM"/>
+                <outlet property="weatherImageView" destination="ktx-4u-cd3" id="Oxi-f2-mV6"/>
+                <outlet property="weekLabel" destination="UaE-fm-FDe" id="K0S-aF-wWQ"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="weather_cloud" width="23" height="17"/>
+    </resources>
+</document>

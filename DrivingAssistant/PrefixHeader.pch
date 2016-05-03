@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  DrivingAssistant
+//
+//  Created by ji on 16/4/19.
+//  Copyright © 2016年 ji. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Constants.h"
+
+#import <AFNetworking.h>
+#import <YYKit.h>
+#import "NSObject+Parse.h"
+#import <UIImageView+WebCache.h>
+#import <Masonry.h>
+#import <MJRefresh.h>
+#import "TSMessage.h"
+
+
+#endif /* PrefixHeader_pch */
